@@ -8,10 +8,10 @@ body {
 }
 
 header {
-  background: linear-gradient(to right, #c2e9fb, #a1c4fd);  /* 💡 softer gradient */
-  color: #1e3a8a;
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  color: #2d3748;
   padding: 40px 20px;
-  text-align: left; /* 👈 more blog-like */
+  text-align: center;
 }
 header h1 {
   font-size: 1.8em;
