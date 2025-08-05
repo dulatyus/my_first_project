@@ -1,5 +1,5 @@
 body {
-  font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+  font-family: 'Nunito', 'Segoe UI', 'Helvetica Neue', sans-serif;
   background-color: #fefefe;
   color: #333;
   line-height: 1.7;
@@ -8,17 +8,15 @@ body {
 }
 
 header {
-  background-color: #3b82f6;
-  color: white;
-  padding: 30px 20px;
-  text-align: center;
+  background: linear-gradient(to right, #c2e9fb, #a1c4fd);  /* 💡 softer gradient */
+  color: #1e3a8a;
+  padding: 40px 20px;
+  text-align: left; /* 👈 more blog-like */
 }
-
 header h1 {
-  font-size: 2em;
+  font-size: 1.8em;
   margin-bottom: 10px;
 }
-
 nav {
   background-color: #e0f0ff;
   padding: 12px 20px;
