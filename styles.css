@@ -111,25 +111,28 @@ footer {
   position: absolute;
   width: 60px;
   height: 60px;
-  top: 65%;     /* Adjust based on target area */
-  left: 18%;    /* Adjust based on target area */
+  top: 58%;
+  left: 18%;
   background: url('https://upload.wikimedia.org/wikipedia/commons/3/3b/Red_Arrow_Right.svg') no-repeat center;
   background-size: contain;
-  transform: rotate(-25deg);
+  filter: brightness(0) saturate(100%) invert(13%) sepia(99%) saturate(7490%) hue-rotate(0deg) brightness(92%) contrast(110%);
+  transform: rotate(-20deg);
   pointer-events: none;
 }
+
 
 /* Speech bubble */
 .bubble {
   position: absolute;
-  top: 55%;     /* Adjust as needed */
-  left: 25%;    /* Adjust as needed */
-  background: #f87171;
+  top: 50%;
+  left: 25%;
+  background: #e60000;
   color: white;
-  padding: 8px 12px;
-  border-radius: 20px;
+  padding: 6px 14px;
+  border-radius: 16px;
   font-size: 0.9em;
-  font-weight: bold;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
   pointer-events: none;
 }
+
