@@ -138,17 +138,17 @@ footer {
 
 
 
-/* Mobile override */
 @media (max-width: 600px) {
   .bubble.bubble-ds160 {
-    top: 58%;
-    left: 50%;
+    top: 32%;
+    left: 70%;
     transform: translateX(-50%);
-    font-size: 0.75em;     /* 🔽 Slightly smaller */
-    padding: 4px 10px;     /* 🔽 Tighter padding */
-    max-width: 80%;        /* ✅ Prevent overflow */
+    font-size: 0.75em;
+    padding: 5px 10px;
+    max-width: 80%;
   }
 }
+
 
 
 
