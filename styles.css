@@ -136,22 +136,15 @@ footer {
   pointer-events: none;
 }
 
-@media (max-width: 600px) {
-  .arrow {
-    top: 63%;
-    left: 50%;
-    width: 40px;
-    height: 40px;
-    transform: rotate(-10deg);
-  }
 
-  .bubble {
-    top: 70%;
-    left: 50%;
+
+/* Mobile override */
+@media (max-width: 600px) {
+  .bubble.bubble-ds160 {
+    top: 58%;         /* move bubble lower if needed */
+    left: 50%;        /* center horizontally */
     transform: translateX(-50%);
-    font-size: 0.8em;
-    padding: 5px 12px;
-    white-space: nowrap;
   }
 }
+
 
