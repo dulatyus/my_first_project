@@ -141,14 +141,15 @@ footer {
 /* Mobile override */
 @media (max-width: 600px) {
   .bubble.bubble-ds160 {
-    top: 64%;
-    left: 80%;
-    transform: translateX(-90%);
-    font-size: 0.75em;
-    padding: 4px 10px;
-    max-width: 80%;
+    top: 58%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 0.75em;     /* 🔽 Slightly smaller */
+    padding: 4px 10px;     /* 🔽 Tighter padding */
+    max-width: 80%;        /* ✅ Prevent overflow */
   }
 }
+
 
 
 
