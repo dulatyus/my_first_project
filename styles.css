@@ -146,12 +146,12 @@ footer {
 /* Mobile */
 @media (max-width: 600px) {
   .bubble.bubble-ds160 {
-    top: 32%;
-    left: 68%;
+    top: 28%;
+    left: 83%;
     transform: translateX(-50%);
-    font-size: 0.75em;
-    padding: 5px 10px;
-    max-width: 80%;
+    font-size: 0.45em;
+    padding: 1px 5px;
+    max-width: 100%;
   }
 }
 
