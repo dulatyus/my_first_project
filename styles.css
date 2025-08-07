@@ -136,19 +136,24 @@ footer {
   pointer-events: none;
 }
 
+/* Desktop */
+.bubble.bubble-ds160 {
+  top: 27%;
+  left: 80%;
+}
 
 
+/* Mobile */
 @media (max-width: 600px) {
   .bubble.bubble-ds160 {
     top: 32%;
-    left: 70%;
+    left: 68%;
     transform: translateX(-50%);
     font-size: 0.75em;
     padding: 5px 10px;
     max-width: 80%;
   }
 }
-
 
 
 
