@@ -23,6 +23,12 @@ nav {
   text-align: center;
 }
 
+.lang-switch {
+  margin-left: 15px;
+  font-size: 0.95em;
+  white-space: nowrap;
+}
+
 nav a {
   text-decoration: none;
   color: #2563eb;
