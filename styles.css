@@ -37,7 +37,7 @@ nav a {
 }
 
 main {
-  max-width: 800px;
+  max-width: 1100px;
   margin: 30px auto;
   padding: 0 16px;
 }
@@ -145,7 +145,7 @@ footer {
 /* Desktop */
 .bubble.bubble-ds160 {
   top: 27%;
-  left: 80%;
+  left: 70%;
 }
 
 
@@ -153,7 +153,7 @@ footer {
 @media (max-width: 600px) {
   .bubble.bubble-ds160 {
     top: 28%;
-    left: 83%;
+    left: 73%;
     transform: translateX(-50%);
     font-size: 0.45em;
     padding: 1px 5px;
