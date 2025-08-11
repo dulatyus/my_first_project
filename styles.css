@@ -144,6 +144,8 @@ footer {
     padding: 1px 5px;
     max-width: 100%;
     border: 2px solid #cc0000; /* darker red border */
+    background: #fffdfa;       /* off-white for eye comfort */
+    color: black;
   }
 }
 
