@@ -143,5 +143,33 @@ footer {
     font-size: 0.45em;
     padding: 1px 5px;
     max-width: 100%;
+    border: 2px solid #cc0000; /* darker red border */
+  }
+}
+
+/* Base line style */
+.line {
+  position: absolute;
+  height: 3px;            /* line thickness */
+  background-color: #e60000; /* red color */
+  z-index: 5;             /* above screenshot */
+  pointer-events: none;
+}
+
+/* Position + length for this specific line */
+.line-ds160 {
+  top: 31%;               /* vertical position */
+  left: 49%;              /* horizontal position */
+  width: 190px;           /* line length */
+  transform: rotate(0deg);
+}
+
+/* Mobile tweak */
+@media (max-width: 600px) {
+  .line-ds160 {
+    width: 60px;
+    top: 32%;
+    left: 50%;
+    height: 2px;            /* line thickness */
   }
 }
