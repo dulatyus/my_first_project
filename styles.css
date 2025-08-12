@@ -114,64 +114,63 @@ footer {
 }
 
 
-
-/* === Bubble base style === */
-.bubble {
-  position: absolute;
-  background: #fffdfa;       /* off-white for eye comfort */
-  color: black;
-  padding: 8px 16px;
-  border: 3px solid #cc0000; /* darker red border */
-  font-weight: 700;
-  border-radius: 18px;
-  font-size: 0.95em;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-  z-index: 6;
+.annot {
+  position: absolute;     /* Positions it on top of the screenshot container */
+  inset: 0;               /* Equivalent to top:0; right:0; bottom:0; left:0; fills the container */
+  pointer-events: none;   /* Makes clicks pass through to the image below */
+  z-index: 5;             /* Places above the screenshot but below the bubble text (z-index:6) */
 }
 
-/* Step-specific bubble placement */
-.bubble.bubble-ds160 {
-  top: 27%;
-  left: 70%;
+/* line anchored to a fixed point on the image */
+.annot .line{
+  position: absolute;        /* Allows placement anywhere inside the .annot layer */
+  top: var(--s-top);         /* Vertical start point (percentage of image height) */
+  left: var(--s-left);       /* Horizontal start point (percentage of image width) */
+  width: calc(var(--b-left) - var(--s-left)); /* Length of line = bubble's horizontal position minus start point */  
+  height: var(--thickness, 3px); /* Line thickness (fallback 3px if --thickness not set) */
+  background: #e60000;         /* Line color (bright red) */
+  transform: translateY(-50%);   /* Vertically centers the line on the start point */
+  z-index: 5;                /* Above image, below bubble */
 }
 
-@media (max-width: 600px) {
-  .bubble.bubble-ds160 {
-    top: 28%;
-    left: 73%;
-    transform: translateX(-50%);
-    font-size: 0.45em;
-    padding: 1px 5px;
-    max-width: 100%;
-    border: 2px solid #cc0000; /* darker red border */
-    background: #fffdfa;       /* off-white for eye comfort */
-    color: black;
+/* the bubble */
+.annot .bubble{
+  position: absolute;        /* Allows placement anywhere inside .annot */
+  top: var(--b-top);         /* Vertical position of bubble (percentage of image height) */
+  left: var(--b-left);       /* Horizontal position of bubble (percentage of image width) */
+  transform: translate(0, -50%);
+                           /* Vertically centers bubble on its Y coordinate */
+  background: #fff;          /* White background for readability */
+  color: #000;               /* Black text */
+  padding: 8px 16px;         /* Space inside bubble (top/bottom, left/right) */
+  border: 3px solid #cc0000; /* Dark red border */
+  border-radius: 18px;       /* Rounded corners */
+  font-weight: 700;          /* Bold text */
+  font-size: .95em;          /* Slightly smaller than base text size */
+  box-shadow: 0 2px 6px rgba(0,0,0,.15);
+                           /* Soft shadow for depth */
+  z-index: 6;                /* Above everything else */
+  pointer-events: auto;      /* Bubble text is clickable/selectable */
+
+}
+
+/* mobile: override the properties to use the -sm variables */
+@media (max-width:600px) {
+  .annot .line {
+    top: var(--s-top-sm, var(--s-top));       /* Mobile vertical start point */
+    left: var(--s-left-sm, var(--s-left));    /* Mobile horizontal start point */
+    width: calc(var(--b-left-sm, var(--b-left))
+                - var(--s-left-sm, var(--s-left)));
+                                              /* Mobile line length */
+    height: var(--thickness-sm, var(--thickness, 3px));
+                                              /* Mobile thickness */
+  }
+  .annot .bubble {
+    top: var(--b-top-sm, var(--b-top));       /* Mobile vertical bubble position */
+    left: var(--b-left-sm, var(--b-left));    /* Mobile horizontal bubble position */
+    font-size: .45em;                         /* Smaller bubble text for mobile */
+    padding: 1px 5px;                         /* Less padding for mobile */
+    border-width: 2px;                        /* Slightly thinner border */
   }
 }
 
-/* Base line style */
-.line {
-  position: absolute;
-  height: 3px;            /* line thickness */
-  background-color: #e60000; /* red color */
-  z-index: 5;             /* above screenshot */
-  pointer-events: none;
-}
-
-/* Position + length for this specific line */
-.line-ds160 {
-  top: 31%;               /* vertical position */
-  left: 49%;              /* horizontal position */
-  width: 190px;           /* line length */
-  transform: rotate(0deg);
-}
-
-/* Mobile tweak */
-@media (max-width: 600px) {
-  .line-ds160 {
-    width: 60px;
-    top: 32%;
-    left: 50%;
-    height: 2px;            /* line thickness */
-  }
-}
