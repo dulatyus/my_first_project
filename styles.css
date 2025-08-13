@@ -174,3 +174,22 @@ footer {
   }
 }
 
+/* Reduce base font sizes on mobile */
+@media (max-width:600px) {
+  body {
+    font-size: 0.9em;
+    line-height: 1.55;
+  }
+
+  header h1 {
+    font-size: 1.35em;
+  }
+
+  nav a {
+    font-size: 0.85em;
+  }
+
+  .caption {
+    font-size: 0.8em;
+  }
+}
