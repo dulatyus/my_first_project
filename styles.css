@@ -201,3 +201,68 @@ footer {
     font-size: 0.8em;
   }
 }
+
+
+
+/* ====== TOP BANNER (AdSense/Ezoic) ====== */
+.top-banner.ad-slot {
+  background: #fafafa;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  padding: 10px;
+  min-height: 90px;           /* reserve space to prevent layout shift */
+  display: grid;
+  place-items: center;
+}
+
+/* ====== LAYOUT: side rail + main ====== */
+.layout {
+  display: flex;
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* main flexes; you already have main styles */
+.layout main { flex: 1 1 auto; }
+
+/* ====== SIDE RAIL (AdSense/Ezoic skyscraper) ====== */
+.ad-rail {
+  flex: 0 0 160px;          /* 160x600 standard */
+  display: flex;
+  justify-content: center;
+}
+.ad-rail .ad-slot {
+  width: 160px;
+  min-height: 600px;        /* reserve space for skyscraper */
+  background: #fafafa;
+  border: 1px dashed #ccc;
+  border-radius: 8px;
+  text-align: center;
+  font-size: .85rem;
+  color: #666;
+  position: sticky;
+  top: 80px;                /* below your fixed nav */
+}
+
+/* Hide side rails on smaller screens */
+@media (max-width: 1100px) {
+  .ad-rail { display: none; }
+}
+
+/* ====== INLINE AFFILIATE “Sponsored Tip” ====== */
+.ad-inline {
+  margin: 32px 0;
+  padding: 16px 18px;
+  border-left: 3px solid #f59e0b;
+  background: #fff8e6;
+  border-radius: 10px;
+}
+.ad-inline h3 { margin: 0 0 6px; font-size: 1.05rem; }
+.ad-inline p  { margin: 4px 0 0; font-size: .95rem; }
+
+/* Hide all ads on print */
+@media print {
+  .top-banner, .ad-rail, .ad-inline, .ad-slot { display: none !important; }
+}
