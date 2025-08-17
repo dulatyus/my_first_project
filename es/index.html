@@ -3,31 +3,88 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Guía paso a paso para completar el formulario DS-160 con capturas de pantalla y explicaciones claras." />
-  <meta name="author" content="Equipo de Guía DS-160" />
-  <title>Guía del formulario DS-160</title>
+  <meta name="description" content="Guía paso a paso para completar el formulario DS-160 de solicitud de visa con capturas de pantalla y explicaciones.">
 
-  <!-- NOTE: paths go up one level from /es/ -->
+  <title>Guía de Solicitud de Visa DS-160</title>
   <link rel="stylesheet" href="../styles.css" />
+
+  <!-- Preconnects (carga más rápida de fuentes) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
 
-  <!-- hreflang / canonical -->
-  <link rel="canonical" href="https://yourdomain.com/es/" />
-  <link rel="alternate" href="https://yourdomain.com/" hreflang="en" />
-  <link rel="alternate" href="https://yourdomain.com/es/" hreflang="es" />
-  <link rel="alternate" href="https://yourdomain.com/" hreflang="x-default" />
+  <!-- Canonical + hreflang -->
+  <link rel="canonical" href="https://dulatyus.github.io/ds160/es/">
+  <link rel="alternate" href="https://dulatyus.github.io/ds160/" hreflang="en">
+  <link rel="alternate" href="https://dulatyus.github.io/ds160/es/" hreflang="es">
+  <link rel="alternate" href="https://dulatyus.github.io/ds160/" hreflang="x-default">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dulatyus.github.io/ds160/es/">
+  <meta property="og:title" content="Guía DS-160 para Solicitud de Visa (Gratis, con Capturas de Pantalla)">
+  <meta property="og:description" content="Guía clara y paso a paso del DS-160 con capturas de pantalla, consejos y requisitos de foto. Gratis e independiente.">
+  <meta property="og:image" content="https://dulatyus.github.io/ds160/images/cover.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Guía DS-160 para Solicitud de Visa (Gratis, con Capturas de Pantalla)">
+  <meta name="twitter:description" content="Guía clara y paso a paso del DS-160 con capturas de pantalla, consejos y requisitos de foto.">
+  <meta name="twitter:image" content="https://dulatyus.github.io/ds160/images/cover.png">
+
+  <!-- Move your JSON-LD blocks into <head> as well -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "url":"https://dulatyus.github.io/ds160/es/",
+    "name":"Guía de Solicitud de Visa DS-160",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://dulatyus.github.io/ds160/es/?q={search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"¿Necesito enviar el formulario en línea?",
+        "acceptedAnswer":{"@type":"Answer","text":"Sí. El DS-160 debe enviarse en línea antes de programar una entrevista de visa."}
+      },
+      {
+        "@type":"Question",
+        "name":"¿Puedo editar después del envío?",
+        "acceptedAnswer":{"@type":"Answer","text":"No. Debes crear un nuevo formulario si necesitas correcciones."}
+      }
+    ]
+  }
+  </script>
 </head>
+
+
 <body>
   <header>
-    <h1>Cómo completé el DS-160 (y cómo puedes hacerlo tú)</h1>
-    <p style="font-size: 1.1em; max-width: 800px; margin: 20px auto; text-align: center;">
-      Cuando estaba completando la solicitud de visa estadounidense DS-160 para mí y mi familia, vi que algunas agencias cobran
-      hasta <strong>20–30 USD</strong> solo por llenar el formulario.
-      Pero sinceramente, puedes hacerlo <strong>tú mismo</strong> si tienes una guía paso a paso.
-      <br><br>
-      Por eso creé este asistente gratuito para explicarte todo con claridad. ¡Ojalá te ahorre tiempo, dinero y estrés!
-    </p>
+  <h1>Guía de Solicitud de Visa DS-160 — Paso a Paso con Capturas de Pantalla</h1>
+  <p style=" font-size: 1.1em; max-width: 800px; margin: 20px auto; text-align: center;">
+  Cuando estaba llenando la solicitud de visa DS-160 para mí y mi familia, noté que algunas agencias
+  cobran hasta <strong>20–30 USD</strong> solo por completar el formulario.
+  Pero, sinceramente, puedes llenarlo <strong>tú mismo</strong> — no es difícil si tienes una guía paso a paso.
+  <br /><br />
+  Así que creé esta ayuda gratuita para guiarte de manera clara. Espero que te ahorre tiempo, dinero y estrés. ¡Éxitos!
+  <br /><br />
+  <strong>No está afiliado al gobierno de EE. UU.</strong>
+  </p>
   </header>
+
+  
 
   <nav>
     <span class="lang-switch">
@@ -35,71 +92,731 @@
     </span>
 
     <a href="#intro">¿Qué es el DS-160?</a>
-    <a href="#steps">Cómo llenarlo</a>
     <a href="#tips">Consejos</a>
-    <a href="#faq">Preguntas frecuentes</a>
+    <a href="#steps">Cómo Llenar el Formulario</a>
+    <a href="#faq">Preguntas Frecuentes</a>
   </nav>
 
-  <main>
-    <section id="intro">
-      <h2>¿Qué es el DS-160?</h2>
-      <p>El DS-160 es el formulario en línea para solicitudes de visa no inmigrante requerido para las visas de visitante a EE. UU. (B1/B2), estudiantes (F, J) y otras categorías.</p>
-    </section>
 
-    <section id="steps">
-      <h2>Instrucciones paso a paso</h2>
+  <!-- Top banner: AdSense/Ezoic display ad -->
+  <div class="top-banner ad-slot" aria-label="Advertisement">
+    <!-- Paste your AdSense/Ezoic tag here later -->
 
-      <div class="step">
-        <h3>Paso 1: Ve al sitio oficial</h3>
-        <p>Visita <a href="https://ceac.state.gov/CEAC/" target="_blank" rel="noopener">ceac.state.gov</a> para iniciar tu solicitud.</p>
+  </div>
 
-        <div class="image-wrapper">
-          <img src="../images/0_starting_page.PNG" alt="Captura de la página de inicio del DS-160" class="screenshot" />
-          <div class="bubble bubble-ds160">Haz clic aquí</div>
-          
+
+  <div class="layout">
+
+
+
+    <main>
+      <section id="intro">
+        <h2>¿Qué es el Formulario DS-160?</h2>
+        <p>El DS-160 es un formulario en línea de solicitud de visa de no inmigrante requerido para visas de visitante a
+          EE. UU. (B1/B2), visas de estudiante (F, J) y otras.</p>
+      </section>
+
+      <section id="tips">
+        <h2>Antes de Comenzar: Consejos para el DS-160</h2>
+        <ul>
+          <li>Usa solo letras en inglés. No escribas "São Paulo", escribe "Sao Paulo". No "Eskişehir", escribe
+            "Eskisehir".</li>
+          <li>Anota tu ID de Solicitud y tu pregunta de seguridad — ver <a href="#step-2">Paso 2</a>.</li>
+          <li>
+            Ten lista una foto digital para la visa (2×2 pulgadas, fondo blanco, sin gafas).
+            Revisa los <a href="#photo-quick"> requisitos de foto aquí</a>.
+          </li>
+          <li>Ten a mano tu pasaporte y los detalles de tu viaje (fechas, dirección en EE. UU., contacto).</li>
+          <li>Guarda con frecuencia — el formulario se cierra si esperas demasiado tiempo.</li>
+          <li>Responde todas las preguntas (no las dejes en blanco). Si no estás seguro, elige la opción más veraz.</li>
+        </ul>
+      </section>
+
+
+      <section id="steps">
+        <h2>Instrucciones DS-160 Paso a Paso (con capturas de pantalla)</h2>
+        <!-- Add more steps here -->
+        <!-- Paso 0 -->
+        <div class="step" id="step-0">
+          <h3>Paso 0: Ir al Sitio Web Oficial</h3>
+          <p>Visita <a href="https://ceac.state.gov/CEAC/" target="_blank">ceac.state.gov</a> para comenzar tu
+            solicitud.
+          </p>
+          <div class="image-wrapper">
+            <img src="../images/0_starting_page.PNG" alt="Captura de pantalla de la página inicial DS-160"
+              class="screenshot" loading="lazy" />
+            <div class="annot" style="
+          --b-top:45%; --b-left:65%;
+          --b-top-sm:35%; --b-left-sm:65%;
+          --thickness:3px; --thickness-sm:1.5px;">
+              <div class="bubble">
+                Haz clic en el primer enlace.
+                El formulario DS-160 es requerido para
+                visas de visitante a EE. UU. (B1/B2),
+                visas de estudiante (F,J) y otras.
+              </div>
+            </div>
+          </div>
         </div>
 
-        <p class="caption">Haz clic en “Start Application” y selecciona la ubicación de tu embajada/consulado.</p>
-      </div>
 
-      <div class="step">
-        <h3>Paso 2: Información personal</h3>
-        <img src="../images/step2-blur.png" alt="Página de información personal" />
-        <p class="caption">Ingresa tu nombre completo, fecha de nacimiento, nacionalidad…</p>
-      </div>
+        <!-- Add more steps here -->
+        <!-- Paso 1 -->
+        <div class="step" id="step-1">
+          <h3>Paso 1: Iniciar el Formulario de Solicitud</h3>
+          <div class="image-wrapper">
+            <img src="../images/1_start_form.PNG" alt="Captura de pantalla de inicio del formulario" class="screenshot"
+              loading="lazy" />
 
-      <!-- Más pasos aquí -->
-    </section>
+            <!-- Anotación -->
+            <div class="annot" style="
+          --b-top:45%; --b-left:65%;
+          --b-top-sm:35%; --b-left-sm:65%;
+          --thickness:3px; --thickness-sm:1.5px;">
+              <div class="bubble">
+                Elige la ciudad donde solicitarás la visa.
+                Puede que necesites verificar la disponibilidad de citas.
+                <br>
+                Según mi experiencia, en el centro de llamadas de la embajada de EE. UU. permitieron cambiar la ciudad
+                sin necesidad de modificar el formulario DS-160.
+                <br>
+                Pero creo que esto queda a discreción de la embajada.
+                <br><br>
+                El formulario acepta mayúsculas y minúsculas.
+                <br><br><br>
+                ¡Buena suerte en tu solicitud!
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <section id="tips">
-      <h2>Consejos útiles</h2>
-      <ul>
-        <li>Usa solo caracteres latinos.</li>
-        <li>Guarda tu ID de solicitud.</li>
-        <li>Prepara una foto tipo pasaporte antes de empezar.</li>
-      </ul>
-    </section>
 
-    <section id="faq">
-      <h2>Preguntas frecuentes</h2>
+        <!-- Add more steps here -->
+        <!-- Paso 2 -->
+        <div class="step" id="step-2">
+          <h3>Paso 2: Crear Pregunta y Respuesta de Seguridad</h3>
+          <div class="image-wrapper">
+            <img src="../images/2_security_word.png" alt="Captura de pantalla de seguridad DS-160" class="screenshot"
+              loading="lazy" />
+            <div class="annot" style="
+        --b-top:45%; --b-left:65%;
+        --b-top-sm:35%; --b-left-sm:65%;
+        --thickness:3px; --thickness-sm:1.5px;">
+              <div class="bubble">
+                <strong>¡¡¡IMPORTANTE!!!</strong>
+                <br>
+                Guarda el ID de solicitud y la respuesta de seguridad.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add more steps here -->
 
-      <details>
-        <summary>¿Debo enviar el formulario en línea?</summary>
-        <p>Sí. El DS-160 debe enviarse en línea antes de programar la entrevista de visa.</p>
-      </details>
 
-      <details>
-        <summary>¿Puedo editarlo después de enviarlo?</summary>
-        <p>No. Si necesitas correcciones, debes crear un formulario nuevo.</p>
-      </details>
-    </section>
-  </main>
+        <!-- Paso 2.1 -->
+        <div class="step" id="step-2.1">
+          <h3>Paso 2.1: Recuperar una Solicitud Existente (opcional)</h3>
+          <div class="image-wrapper">
+            <img src="../images/retrive.png" alt="Captura de pantalla recuperar solicitud DS-160" class="screenshot"
+              loading="lazy" />
+            <div class="annot" style="
+        --b-top:45%; --b-left:65%;
+        --b-top-sm:35%; --b-left-sm:65%;
+        --thickness:3px; --thickness-sm:1.5px;">
+              <div class="bubble">
+                El ID de solicitud es necesario para recuperarla y al registrarse para la entrevista.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add more steps here -->
+
+        <!-- Paso 2.2 -->
+        <div class="step" id="step-2.2">
+          <h3>Paso 2.2: Recuperar una Solicitud Existente (opcional)</h3>
+          <div class="image-wrapper">
+            <img src="../images/retrieve2.png" alt="Captura de pantalla recuperar solicitud DS-160" class="screenshot"
+              loading="lazy" />
+            <div class="annot" style="
+        --b-top:45%; --b-left:65%;
+        --b-top-sm:35%; --b-left-sm:65%;
+        --thickness:3px; --thickness-sm:1.5px;">
+              <div class="bubble">
+                También se necesita la respuesta de seguridad.
+                <br>
+                Si el apellido tiene menos de 5 letras, no hay problema.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add more steps here -->
+
+        <!-- Paso 3 -->
+        <div class="step" id="step-3">
+          <h3>Paso 3: Información Personal – Parte 1 (Nombre, Fecha de Nacimiento, Nacionalidad)</h3>
+          <div class="image-wrapper">
+            <img src="../images/3.png" alt="Captura de pantalla de información personal DS-160" class="screenshot"
+              loading="lazy" />
+            <div class="annot" style="
+        --b-top:45%; --b-left:65%;
+        --b-top-sm:35%; --b-left-sm:65%;
+        --thickness:3px; --thickness-sm:1.5px;">
+              <div class="bubble">
+                Ingresa tu nombre exactamente como en
+                tu pasaporte (mismo orden, sin espacios adicionales).
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add more steps here -->
+
+
+        <div class="step" id="step-4">
+          <h3>Paso 4: Información Personal – Parte 2 (Pasaporte, Números de Identificación)</h3>
+          <div class="image-wrapper">
+            <img src="../images/4.png" alt="Captura de pantalla de pasaporte e identificación DS-160" class="screenshot"
+              loading="lazy" />
+            <div class="annot" style="
+        --b-top:45%; --b-left:65%;
+        --b-top-sm:35%; --b-left-sm:65%;
+        --thickness:3px; --thickness-sm:1.5px;">
+              <div class="bubble">
+                El número de Identificación Nacional no es el número de pasaporte.
+                <br>
+                En Kazajistán es el número de identificación de 12 dígitos llamado IIN (ИИН).
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add more steps here -->
+
+        <div class="step" id="step-5">
+          <h3>Paso 5: Información de Viaje (Propósito, Fechas, Contacto en EE. UU.)</h3>
+          <div class="image-wrapper">
+            <img src="../images/5.png" alt="Captura de pantalla de información de viaje DS-160" class="screenshot"
+              loading="lazy" />
+            <div class="annot" style="
+        --b-top:45%; --b-left:65%;
+        --b-top-sm:35%; --b-left-sm:65%;
+        --thickness:3px; --thickness-sm:1.5px;">
+              <div class="bubble">
+                En mi solicitud, elegí "No" y solo puse la fecha de llegada con la duración planificada (3 semanas).
+                <br>
+                Sin embargo, puede ser útil añadir detalles, pero conviene hacer un plan adecuado.
+                <br>
+                ¿A dónde planeas ir? ¿Ya tienes vuelo?
+                ¿Dónde te vas a alojar?
+                <br>
+                Si es un hotel, busca la dirección y ponla aquí.
+                Reserva con cancelación gratuita, así no pagas sin tener la visa.
+                <br>
+                Si alguien financia tu viaje, proporciona información detallada sobre esa persona.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more steps here -->
+        <!-- Affiliate: Visa Photo (after Step 5) -->
+        <div class="ad-inline" aria-label="Sponsored add-1">
+
+        </div>
+        <!-- Add more steps here -->
+
+        <div class="step" id="step-6">
+          <h3>Paso 6: Compañeros de Viaje (familia o grupo)</h3>
+          <div class="image-wrapper">
+            <img src="../images/6.png" alt="Captura de pantalla de compañeros de viaje DS-160" class="screenshot"
+              loading="lazy" />
+            <div class="annot" style="
+        --b-top:45%; --b-left:65%;
+        --b-top-sm:35%; --b-left-sm:65%;
+        --thickness:3px; --thickness-sm:1.5px;">
+              <div class="bubble">
+                Todos los nombres son ficticios.
+                <br>
+                En mi solicitud, agregué a mi esposa y 4 hijos.
+                <br>
+                Creo que “grupo” aquí significa si viajas como parte de un tour o algo similar.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more steps here -->
+
+        <div class="step" id="step-7">
+          <h3>Paso 7: Información de Viajes Previos a EE. UU. (visas, entradas, rechazos)</h3>
+          <div class="image-wrapper">
+            <img src="../images/7.png" alt="Captura de pantalla de historial de viajes DS-160" class="screenshot"
+              loading="lazy" />
+            <div class="annot" style="
+        --b-top:45%; --b-left:65%;
+        --b-top-sm:35%; --b-left-sm:65%;
+        --thickness:3px; --thickness-sm:1.5px;">
+              <div class="bubble">
+                Declara con honestidad todas las visas y entradas anteriores a EE. UU.
+                <br>
+                Si tuviste un rechazo, proporciona los detalles.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more steps here -->
+
+        <div class="step" id="step-8">
+          <h3>Paso 8: Dirección y Teléfono (domicilio, correspondencia, teléfono, correo electrónico)</h3>
+          <div class="image-wrapper">
+            <img src="../images/8.png" alt="Captura de pantalla de dirección y teléfono DS-160" class="screenshot"
+              loading="lazy" />
+            <div class="annot" style="
+        --b-top:45%; --b-left:65%;
+        --b-top-sm:35%; --b-left-sm:65%;
+        --thickness:3px; --thickness-sm:1.5px;">
+              <div class="bubble">
+                Aquí van las direcciones de domicilio y correspondencia, teléfono y correo electrónico.
+                <br>
+                Las redes sociales son opcionales — añade solo lo que quieras compartir.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more steps here -->
+
+        <div class="step" id="step-9">
+          <h3>Paso 9: Información del Pasaporte (tipo, número, fechas de emisión y vencimiento)</h3>
+          <div class="image-wrapper">
+            <img src="../images/9.png" alt="Captura de pantalla de pasaporte DS-160" class="screenshot"
+              loading="lazy" />
+            <div class="annot" style="
+        --b-top:45%; --b-left:65%;
+        --b-top-sm:35%; --b-left-sm:65%;
+        --thickness:3px; --thickness-sm:1.5px;">
+              <div class="bubble">
+                Aquí se pregunta por el pasaporte internacional (en algunos países hay interno y externo).
+                <br>
+                Si no eres diplomático ni funcionario de gobierno,
+                lo más probable es que tengas un pasaporte internacional regular.
+                <br>
+                Verifica bien el número y las fechas de emisión/vencimiento.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more steps here -->
+
+        <div class="step" id="step-10">
+          <h3>Paso 10: Información de Contacto en EE. UU. (persona, organización, dirección)</h3>
+          <div class="image-wrapper">
+            <img src="../images/10.png" alt="Captura de pantalla de contacto en EE. UU. DS-160" class="screenshot"
+              loading="lazy" />
+            <div class="annot" style="
+        --b-top:45%; --b-left:65%;
+        --b-top-sm:35%; --b-left-sm:65%;
+        --thickness:3px; --thickness-sm:1.5px;">
+              <div class="bubble">
+                Nosotros no teníamos ningún contacto en EE. UU., solo el nombre del hotel.
+                <br>
+                Si tienes un anfitrión en EE. UU., ingresa su nombre y dirección.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more steps here -->
+        <!-- Affiliate: Visa Photo (after Step 10) -->
+        <div class="ad-inline" aria-label="Sponsored add-2">
+
+        </div>
+        <!-- Add more steps here -->
+
+        <div class="step" id="step-11">
+          <h3>Paso 11: Información Familiar – Parte 1 (nombres de padres, fechas de nacimiento)</h3>
+          <div class="image-wrapper">
+            <img src="../images/11.png" alt="Captura de pantalla de información familiar DS-160 (padres)"
+              class="screenshot" loading="lazy" />
+            <div class="annot" style="
+        --b-top:45%; --b-left:65%;
+        --b-top-sm:35%; --b-left-sm:65%;
+        --thickness:3px; --thickness-sm:1.5px;">
+              <div class="bubble">
+                Los nombres son ficticios.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more steps here -->
+
+        <div class="step" id="step-12">
+          <h3>Paso 12: Información Familiar – Parte 2 (cónyuge, hijos si aplica)</h3>
+          <div class="image-wrapper">
+            <img src="../images/12.png" alt="Captura de pantalla de información familiar DS-160 (cónyuge e hijos)"
+              class="screenshot" loading="lazy" />
+            <div class="annot" style="
+        --b-top:45%; --b-left:65%;
+        --b-top-sm:35%; --b-left-sm:65%;
+        --thickness:3px; --thickness-sm:1.5px;">
+              <div class="bubble">
+                Los nombres son ficticios.
+                <br>
+                Agrega a tu cónyuge y a todos tus hijos, si los tienes.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more steps here -->
+
+        <div class="step" id="step-13">
+          <h3>Paso 13: Trabajo / Educación / Capacitación – Parte 1 (empleo o estudios actuales)</h3>
+          <div class="image-wrapper">
+            <img src="../images/13.png" alt="Captura de pantalla de trabajo o estudios DS-160" class="screenshot"
+              loading="lazy" />
+            <div class="annot" style="
+        --b-top:45%; --b-left:65%;
+        --b-top-sm:35%; --b-left-sm:65%;
+        --thickness:3px; --thickness-sm:1.5px;">
+              <div class="bubble">
+                Dirección completa del trabajo.
+                <br>
+                Como parte de los documentos,
+                puedes llevar una constancia oficial del trabajo que incluya tu salario.
+                <br>
+                También un extracto bancario como prueba de fondos.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more steps here -->
+
+        <div class="step" id="step-14">
+          <h3>Paso 14: Trabajo / Educación / Capacitación – Parte 2 (empleos anteriores, estudios, viajes)</h3>
+          <div class="image-wrapper">
+            <img src="../images/14.png" alt="Captura de pantalla de empleos y estudios anteriores DS-160"
+              class="screenshot" loading="lazy" />
+            <div class="annot" style="
+        --b-top:45%; --b-left:65%;
+        --b-top-sm:35%; --b-left-sm:65%;
+        --thickness:3px; --thickness-sm:1.5px;">
+              <div class="bubble">
+                Educación desde la secundaria en adelante.
+                <br>
+                Experiencias de voluntariado están bien — solo si son reales.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more steps here -->
+
+        <div class="step" id="step-15">
+          <h3>Paso 15: Trabajo / Educación / Capacitación – Parte 3 (información adicional)</h3>
+          <div class="image-wrapper">
+            <img src="../images/15.png" alt="Captura de pantalla de información adicional DS-160" class="screenshot"
+              loading="lazy" />
+            <div class="annot" style="
+        --b-top:45%; --b-left:65%;
+        --b-top-sm:35%; --b-left-sm:65%;
+        --thickness:3px; --thickness-sm:1.5px;">
+              <div class="bubble">
+                No estoy seguro sobre los idiomas,
+                pero si has visitado otros países,
+                eso suele ser una buena señal.
+                <br>
+                Nosotros teníamos 3-4 países para mencionar, todos con sellos en el pasaporte.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more steps here -->
+
+        <div class="step" id="step-16">
+          <h3>Paso 16: Seguridad y Antecedentes – Parte 1</h3>
+          <div class="image-wrapper">
+            <img src="../images/16.png" alt="Captura de pantalla de seguridad DS-160 parte 1" class="screenshot"
+              loading="lazy" />
+            <div class="annot" style="
+        --b-top:45%; --b-left:65%;
+        --b-top-sm:35%; --b-left-sm:65%;
+        --thickness:3px; --thickness-sm:1.5px;">
+              <div class="bubble">
+                Responde cada pregunta con honestidad.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more steps here -->
+
+        <div class="step" id="step-17">
+          <h3>Paso 17: Seguridad y Antecedentes – Parte 2</h3>
+          <div class="image-wrapper">
+            <img src="../images/17.png" alt="Captura de pantalla de seguridad DS-160 parte 2" class="screenshot"
+              loading="lazy" />
+            <div class="annot" style="
+        --b-top:45%; --b-left:65%;
+        --b-top-sm:35%; --b-left-sm:65%;
+        --thickness:3px; --thickness-sm:1.5px;">
+              <div class="bubble">
+                Responde cada pregunta con honestidad.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more steps here -->
+
+        <div class="step" id="step-18">
+          <h3>Paso 18: Seguridad y Antecedentes – Parte 3</h3>
+          <div class="image-wrapper">
+            <img src="../images/18.png" alt="Captura de pantalla de seguridad DS-160 parte 3" class="screenshot"
+              loading="lazy" />
+            <div class="annot" style="
+        --b-top:45%; --b-left:65%;
+        --b-top-sm:35%; --b-left-sm:65%;
+        --thickness:3px; --thickness-sm:1.5px;">
+              <div class="bubble">
+                Responde cada pregunta con honestidad.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more steps here -->
+
+        <div class="step" id="step-19">
+          <h3>Paso 19: Seguridad y Antecedentes – Parte 4</h3>
+          <div class="image-wrapper">
+            <img src="../images/19.png" alt="Captura de pantalla de seguridad DS-160 parte 4" class="screenshot"
+              loading="lazy" />
+            <div class="annot" style="
+        --b-top:45%; --b-left:65%;
+        --b-top-sm:35%; --b-left-sm:65%;
+        --thickness:3px; --thickness-sm:1.5px;">
+              <div class="bubble">
+                Responde cada pregunta con honestidad.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more steps here -->
+
+        <div class="step" id="step-20">
+          <h3>Paso 20: Seguridad y Antecedentes – Parte 5</h3>
+          <div class="image-wrapper">
+            <img src="../images/20.png" alt="Captura de pantalla de seguridad DS-160 parte 5" class="screenshot"
+              loading="lazy" />
+            <div class="annot" style="
+        --b-top:45%; --b-left:65%;
+        --b-top-sm:35%; --b-left-sm:65%;
+        --thickness:3px; --thickness-sm:1.5px;">
+              <div class="bubble">
+                Responde cada pregunta con honestidad.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more steps here -->
+        <!-- Affiliate: Visa Photo (after Step 20) -->
+        <div class="ad-inline" aria-label="Sponsored add-3">
+
+        </div>
+        <!-- Add more steps here -->
+
+        <!-- Section: DS-160 Photo Requirements -->
+        <section id="photo-quick">
+          <h2>Requisitos de Foto DS-160 (Guía Rápida)</h2>
+          <ul>
+            <li>Detalles oficiales:
+              <a href="https://travel.state.gov/content/travel/en/us-visas/visa-information-resources/photos.html"
+                target="_blank" rel="noopener">
+                Requisitos de Foto para la Visa de EE. UU.
+              </a>.
+            </li>
+            <li>Tamaño: 2×2 pulgadas (51×51 mm); imagen digital cuadrada.</li>
+            <li>Fondo: blanco liso; sin sombras.</li>
+            <li>Rostro: centrado, expresión neutra; sin gafas.</li>
+            <li>Iluminación: uniforme, sin contrastes fuertes; sin filtros.</li>
+            <li>Archivo: foto reciente (últimos 6 meses).</li>
+          </ul>
+        </section>
+
+
+
+        <!-- Step 21: Upload photo -->
+        <div class="step" id="step-21">
+          <h3>Paso 21: Subir la foto para la visa</h3>
+          <div class="image-wrapper">
+            <img src="../images/21.png" alt="Captura de pantalla subir foto DS-160" class="screenshot" loading="lazy" />
+            <div class="annot" style="
+        --b-top:45%; --b-left:65%;
+        --b-top-sm:35%; --b-left-sm:65%;
+        --thickness:3px; --thickness-sm:1.5px;">
+              <div class="bubble">
+                Existen requisitos específicos para las solicitudes de visa de EE. UU.
+                Revísalos antes de subir la foto.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more steps here -->
+
+        <!-- Step 22: Photo review -->
+        <div class="step" id="step-22">
+          <h3>Paso 22: Revisión de la foto</h3>
+          <div class="image-wrapper">
+            <img src="../images/22.png" alt="Captura de pantalla revisión de foto DS-160" class="screenshot"
+              loading="lazy" />
+            <div class="annot" style="
+        --b-top:45%; --b-left:65%;
+        --b-top-sm:35%; --b-left-sm:65%;
+        --thickness:3px; --thickness-sm:1.5px;">
+              <div class="bubble">
+                Si la foto cumple con los requisitos, verás una marca verde.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more steps here -->
+
+        <div class="step" id="step-23">
+          <h3>Paso 23: Revisión de datos – Parte 5</h3>
+          <div class="image-wrapper">
+            <img src="../images/23.png" alt="Captura de pantalla de revisión de datos DS-160" class="screenshot"
+              loading="lazy" />
+            <div class="annot" style="
+        --b-top:45%; --b-left:65%;
+        --b-top-sm:35%; --b-left-sm:65%;
+        --thickness:3px; --thickness-sm:1.5px;">
+              <div class="bubble">
+                Verifica dos veces tu nombre, números y fechas para que coincidan con tus documentos.
+                <br>
+                Tendrás varias páginas para revisar tus datos.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more steps here -->
+
+        <div class="step" id="step-24">
+          <h3>Paso 24: Ubicación</h3>
+          <div class="image-wrapper">
+            <img src="../images/24.png" alt="Captura de pantalla de ubicación de envío DS-160" class="screenshot"
+              loading="lazy" />
+            <div class="annot" style="
+        --b-top:45%; --b-left:65%;
+        --b-top-sm:35%; --b-left-sm:65%;
+        --thickness:3px; --thickness-sm:1.5px;">
+              <div class="bubble">
+                Lugar para cambiar la ubicación de envío.
+                <br>
+                Después de esto, queda únicamente a discreción de la embajada.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more steps here -->
+
+        <div class="step" id="step-25">
+          <h3>Paso 25: Firmar y enviar</h3>
+          <div class="image-wrapper">
+            <img src="../images/25.png" alt="Captura de pantalla firmar y enviar DS-160" class="screenshot"
+              loading="lazy" />
+            <div class="annot" style="
+        --b-top:45%; --b-left:65%;
+        --b-top-sm:35%; --b-left-sm:65%;
+        --thickness:3px; --thickness-sm:1.5px;">
+              <div class="bubble">
+                Si alguien te ayudó, añade su información; no hay problema con eso.
+                <br>
+                <br>
+                <br>
+                ¡Buena suerte!
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Add more steps here -->
+        <section id="next-steps">
+          <h2>Después del DS-160: Programa tu Entrevista de Visa</h2>
+          <p>
+            Crea una cuenta en el sitio de programación de visas de EE. UU. de tu país, paga la tarifa MRV e ingresa tu
+            número de confirmación del DS-160 (página con código de barras).
+            Puedes comenzar aquí:
+            <a href="https://www.ustraveldocs.com/" target="_blank" rel="noopener">
+              Portal Oficial de Citas para Visas de EE. UU.
+            </a>.
+          </p>
+          <ul>
+            <li>Puedes reprogramar si es necesario (las políticas varían según el lugar).</li>
+            <li>Si más adelante creas un nuevo DS-160, actualiza el número en tu perfil.</li>
+            <li>Lleva a la entrevista tu página de confirmación, pasaporte, foto (si se requiere) y documentos de
+              respaldo.</li>
+          </ul>
+        </section>
+
+
+
+
+
+
+
+      </section>
+
+
+
+
+
+      <section id="faq">
+        <h2>Preguntas Frecuentes sobre el DS-160</h2>
+        <details>
+          <summary>¿Necesito enviar el formulario en línea?</summary>
+          <p>Sí. El DS-160 debe enviarse en línea antes de programar una entrevista de visa.</p>
+        </details>
+        <details>
+          <summary>¿Puedo editar después del envío?</summary>
+          <p>No. Debes crear un nuevo formulario si necesitas hacer correcciones.</p>
+        </details>
+      </section>
+
+
+      <section id="about">
+        <h2>Acerca de Esta Guía</h2>
+        <p>
+          Esta es una guía gratuita e independiente del DS-160 basada en experiencia personal, creada para ayudar a los
+          solicitantes a evitar errores simples.
+          No está afiliada al gobierno de EE. UU.
+        </p>
+      </section>
+
+
+    </main>
+
+    <!-- RIGHT SIDE RAIL (general ads) -->
+    <aside class="ad-rail right-rail" aria-label="Advertisement">
+      <div class="ad-slot"></div>
+    </aside>
+
+  </div> <!-- /.layout -->
+
 
   <footer>
-    <p>© 2025 Guía DS-160. No afiliado al gobierno de EE. UU.
-      <!-- If you later create /es/privacy.html, change the link below -->
-      <a href="../privacy.html">Política de privacidad</a>
-    </p>
+    <p>© 2025 Guía DS-160. No está afiliada al gobierno de EE. UU.</p>
   </footer>
-</body>
+
+  </body>
+
 </html>

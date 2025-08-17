@@ -266,3 +266,22 @@ footer {
 @media print {
   .top-banner, .ad-rail, .ad-inline, .ad-slot { display: none !important; }
 }
+
+
+/* put this in styles.css */
+:root { --nav-h: 60px; }          /* match your actual nav height */
+html { scroll-padding-top: var(--nav-h); scroll-behavior: smooth; }
+
+/* If your nav is a bit shorter on phones, tweak it: */
+@media (max-width:600px){
+  :root { --nav-h: 56px; }
+}
+
+
+/* fallback offset for hash targets */
+[id]:target::before {
+  content: "";
+  display: block;
+  height: 60px;        /* same as nav height */
+  margin-top: -60px;   /* negate the height to push content down */
+}
