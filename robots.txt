@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://dulatyus.github.io/ds160/sitemap.xml
+
+Sitemap: https://usvisahelper.com/sitemap.xml
