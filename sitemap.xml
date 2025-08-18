@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://usvisahelper.com/</loc></url>
-  <url><loc>https://usvisahelper.com/es/</loc></url>
-  <url><loc>https://usvisahelper.com/hi/</loc></url>
+
+  <!-- Main site -->
+  <url>
+    <loc>https://usvisahelper.com/</loc>
+  </url>
+
+  <!-- Spanish version -->
+  <url>
+    <loc>https://usvisahelper.com/es/</loc>
+  </url>
+
+  <!-- Hindi version -->
+  <url>
+    <loc>https://usvisahelper.com/hi/</loc>
+  </url>
+
+  <!-- Privacy page -->
+  <url>
+    <loc>https://usvisahelper.com/privacy.html</loc>
+  </url>
+
 </urlset>
