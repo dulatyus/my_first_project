@@ -11,13 +11,16 @@ body {
 header {
   background: linear-gradient(135deg, #c2e9fb, #a1c4fd);
   color: #1e3a8a;
-  padding: 40px 20px;
+  padding: 18px 10px;
   text-align: center;
 }
 header h1 {
-  font-size: 1.8em;
-  margin-bottom: 10px;
+  font-size: clamp(1rem, 2.2vw + 0.6rem, 1rem); /* was 1.8em */
+  margin-bottom: 6px;            /* was 10px */
+  line-height: 1.2;
 }
+
+
 
 nav {
   background-color: #e0f0ff;
